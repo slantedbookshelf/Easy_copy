@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easy-copy"
+version = "0.1.0"
+description = "随记板（Easy-copy）：Windows 桌面悬浮文本暂存工具"
+requires-python = ">=3.11"
+dependencies = ["PySide6-Essentials>=6.8,<6.13"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-qt>=4.4", "pyinstaller>=6"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "--basetemp .pytest_tmp"
+
+[tool.setuptools.packages.find]
+where = ["src"]

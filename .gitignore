@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+build/
+dist/
+*.egg-info/
+.venv/
+
+# 打包产物与临时文件（不上传）
+*.zip
+deliverables/
+.smoke-data/
+.workbuddy/
+*.log
